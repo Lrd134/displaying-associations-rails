@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+ emanuel = Author.create!(name: "Emanuel", genre: "pop", bio: "I love to write!")
+ fiction = Category.create!(name: "Fiction")  
+ post_of_birds = Post.create!(title: "If Birds had Teeth", description: "If birds had teeth they would eat humans whole.", post_status: true, author: emanuel, category: fiction ) 
+
